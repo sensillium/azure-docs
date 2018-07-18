@@ -58,6 +58,10 @@ backups to be performed than **Standard** tier.
 
 4. Click **OK**.
 
+   >[!WARNING]
+   > If the option to restore the AzureSQL database is selected then, due to the order the App and Database are restored, the App must      > be 'stopped'. If they are not and there is a backgroup process in the App, as soon as the App to database connection is        
+   > viable the App may begin altering the databse whilst the databse is being restored, potentially leading to duplicated Primary Keys    > and data loss.
+
 <a name="StorageAccount"></a>
 
 ## Download or delete a backup from a storage account
